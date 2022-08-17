@@ -37,7 +37,7 @@ cd ~/catkin_ws && catkin_make
 ### Configurar archivo .bashrc
 ```
 cd
-nano .bashrc
+gedit .bashrc
 ```
 En el archivo .bashrc incluir las siguientes líneas:
 * export TURTLEBOT3_MODEL=burger
