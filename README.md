@@ -1,53 +1,53 @@
 # TurtleBot3
-Este es un repositorio para la asignatura "Funamentos de Robótica Móvil" para la instalación y simulación empleando el robot [TurtleBot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/)
+<img src="https://github.com/ROBOTIS-GIT/emanual/blob/master/assets/images/platform/turtlebot3/logo_turtlebot3.png" width="300">
 
-## Requisitos de software
-* Ubuntu [16.04](https://releases.ubuntu.com/16.04/) o [18.04](https://releases.ubuntu.com/18.04/)
-* ROS [Kinetic](http://wiki.ros.org/kinetic) o [Melodic](http://wiki.ros.org/melodic)
+[![kinetic-devel Status](https://github.com/ROBOTIS-GIT/turtlebot3/workflows/kinetic-devel/badge.svg)](https://github.com/ROBOTIS-GIT/turtlebot3/tree/kinetic-devel)
 
-## Instalación
-### Instalación de paquetes:
-```bat
-sudo apt-get update
-sudo apt-get install ros-melodic-turtlebot3
-sudo apt-get install ros-melodic-turtlebot3-applications
-sudo apt-get install ros-melodic-turtlebot3-simulations
-sudo apt-get install ros-melodic-turtlebot3-gazebo
-sudo apt-get install ros-melodic-turtlebot3-teleop
-sudo apt-get install ros-melodic-turtlebot3-example
-```
+[![melodic-devel Status](https://github.com/ROBOTIS-GIT/turtlebot3/workflows/melodic-devel/badge.svg)](https://github.com/ROBOTIS-GIT/turtlebot3/tree/melodic-devel)
 
-### Crear la carpeta catkin_ws
-Si aun se configura el espacio de trabajo catkin puede hacerse de la siguiente manera:
-```
-cd
-mkdir catkin_ws
-cd ~/catkin_ws/
-mkdir src
-cd ..
-catkin_make
-```
-### Incluir repositorios
-En la carpeta ~/catkin_ws/src
-```
-git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
-cd ~/catkin_ws && catkin_make
-```
-### Configurar archivo .bashrc
-```
-cd
-gedit .bashrc
-```
-En el archivo .bashrc incluir las siguientes líneas:
-* export TURTLEBOT3_MODEL=burger
-* source /home/"TU_USUARIO"/catkin_ws/devel/setup.bash
+[![noetic-devel Status](https://github.com/ROBOTIS-GIT/turtlebot3/workflows/noetic-devel/badge.svg)](https://github.com/ROBOTIS-GIT/turtlebot3/tree/noetic-devel)
 
-## Comprobando la instalación del TurtleBot3
-* En una de las pestañas de la consola lanzar el ros master con la instrucción roscore
-* En otra pestaña lanzar el robot con un mundo gazebo con alguna de las siguientes opciones:
-    * roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
-    * roslaunch turtlebot3_gazebo turtlebot3_world.launch
-* En otra pestaña lanzar el nodo que conecta con rviz: roslaunch turtlebot3_fake turtlebot3_fake.launch
-* En otra pestaña lanzar el teleop para mover el robot en el entorno de simulación:
-roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+[![dashing-devel Status](https://github.com/ROBOTIS-GIT/turtlebot3/workflows/dashing-devel/badge.svg)](https://github.com/ROBOTIS-GIT/turtlebot3/tree/dashing-devel)
+
+[![foxy-devel Status](https://github.com/ROBOTIS-GIT/turtlebot3/workflows/foxy-devel/badge.svg)](https://github.com/ROBOTIS-GIT/turtlebot3/tree/foxy-devel)
+
+[![galactic-devel Status](https://github.com/ROBOTIS-GIT/turtlebot3/workflows/galactic-devel/badge.svg)](https://github.com/ROBOTIS-GIT/turtlebot3/tree/galactic-devel)
+
+## ROBOTIS e-Manual for TurtleBot3
+- [ROBOTIS e-Manual for TurtleBot3](http://turtlebot3.robotis.com/)
+
+## Wiki for turtlebot3 Packages
+- http://wiki.ros.org/turtlebot3 (metapackage)
+- http://wiki.ros.org/turtlebot3_bringup
+- http://wiki.ros.org/turtlebot3_description
+- http://wiki.ros.org/turtlebot3_example
+- http://wiki.ros.org/turtlebot3_navigation
+- http://wiki.ros.org/turtlebot3_slam
+- http://wiki.ros.org/turtlebot3_teleop
+
+## Open Source related to TurtleBot3
+- [turtlebot3](https://github.com/ROBOTIS-GIT/turtlebot3)
+- [turtlebot3_msgs](https://github.com/ROBOTIS-GIT/turtlebot3_msgs)
+- [turtlebot3_simulations](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)
+- [turtlebot3_applications_msgs](https://github.com/ROBOTIS-GIT/turtlebot3_applications_msgs)
+- [turtlebot3_applications](https://github.com/ROBOTIS-GIT/turtlebot3_applications)
+- [turtlebot3_autorace](https://github.com/ROBOTIS-GIT/turtlebot3_autorace)
+- [turtlebot3_deliver](https://github.com/ROBOTIS-GIT/turtlebot3_deliver)
+- [hls_lfcd_lds_driver](https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver)
+- [turtlebot3_manipulation](https://github.com/ROBOTIS-GIT/turtlebot3_manipulation.git)
+- [turtlebot3_manipulation_simulations](https://github.com/ROBOTIS-GIT/turtlebot3_manipulation_simulations.git)
+- [open_manipulator_msgs](https://github.com/ROBOTIS-GIT/open_manipulator_msgs)
+- [open_manipulator](https://github.com/ROBOTIS-GIT/open_manipulator)
+- [open_manipulator_simulations](https://github.com/ROBOTIS-GIT/open_manipulator_simulations)
+- [open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
+- [dynamixel_sdk](https://github.com/ROBOTIS-GIT/DynamixelSDK)
+- [OpenCR-Hardware](https://github.com/ROBOTIS-GIT/OpenCR-Hardware)
+- [OpenCR](https://github.com/ROBOTIS-GIT/OpenCR)
+
+## Documents and Videos related to TurtleBot3
+- [ROBOTIS e-Manual for TurtleBot3](http://turtlebot3.robotis.com/)
+- [ROBOTIS e-Manual for OpenManipulator](http://emanual.robotis.com/docs/en/platform/openmanipulator/)
+- [ROBOTIS e-Manual for Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/)
+- [Website for TurtleBot Series](http://www.turtlebot.com/)
+- [e-Book for TurtleBot3](https://community.robotsource.org/t/download-the-ros-robot-programming-book-for-free/51/)
+- [Videos for TurtleBot3 ](https://www.youtube.com/playlist?list=PLRG6WP3c31_XI3wlvHlx2Mp8BYqgqDURU)
